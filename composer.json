@@ -1,0 +1,34 @@
+{
+    "name": "vijinho/sql-formatter",
+    "description": "skeleton sql formatter application",
+    "keywords": ["php", "skeleton", "skeleton app", "skeleton application", "sql", "sql formatter"],
+    "homepage": "https://github.com/vijinho/f3-boilerplate",
+    "license": "GPL-3.0+",
+    "type": "application",
+    "authors": [
+        {
+            "name": "Vijay Mahrra",
+            "email": "vijay@yoyo.org",
+            "homepage": "http://about.me/vijay.mahrra",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "lib"
+    },
+    "autoload": {
+        "classmap": ["lib"]
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "jdorn/sql-formatter": "dev-master"
+    },
+    "suggest": {
+        "php": ">=5.6.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
