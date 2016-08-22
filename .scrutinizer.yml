@@ -7,10 +7,11 @@ before_commands:
 
 filter:
     excluded_paths:
+        - css/*
         - docs/*
+        - images/*
         - lib/*
         - tests/*
-        - examples/*
 
 checks:
     php:
@@ -36,19 +37,21 @@ tools:
         runs: 4
         filter:
             excluded_paths:
-                - 'docs/*'
+                - css/*
+                - docs/*
+                - images/*
                 - 'tests/*'
                 - 'lib/*'
-                - 'examples/*'
 
     php_code_coverage: true
         enabled: false
         filter:
             excluded_paths:
+                - 'css/*'
                 - 'docs/*'
+                - 'images/*'
                 - 'tests/*'
                 - 'lib/*'
-                - 'examples/*'
 
     # The PSR-1 and PSR-2 Coding Standards fixer for your code
     # http://cs.sensiolabs.org
@@ -58,10 +61,11 @@ tools:
             level: psr2
         filter:
             excluded_paths:
+                - 'css/*'
                 - 'docs/*'
+                - 'images/*'
                 - 'tests/*'
                 - 'lib/*'
-                - 'examples/*'
 
     # PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files to detect and fix violations of a defined set of coding standards.
     # http://pear.php.net/package/PHP_CodeSniffer/
@@ -76,40 +80,44 @@ tools:
         filter:
             paths: ['src']
             excluded_paths:
+                - 'css/*'
                 - 'docs/*'
+                - 'images/*'
                 - 'lib/*'
                 - 'tests/*'
-                - 'examples/*'
 
     # Analyzes the size and structure of a PHP project.
     # https://github.com/sebastianbergmann/phploc
     php_loc:
         enabled: true
         excluded_dirs:
+            - css
             - docs
+            - images
             - lib
             - tests
-            - examples
 
     # Copy/Paste Detector
     # https://github.com/sebastianbergmann/phpcpd
     php_cpd:
         enabled: true
         excluded_dirs:
+            - css
             - docs
+            - images
             - lib
             - tests
-            - examples
 
     # Analyzes the size and structure of a PHP project.
     # https://pdepend.org
     php_pdepend:
         enabled: true
         excluded_dirs:
+            - css
             - docs
+            - images
             - tests
             - lib
-            - examples
 
     # PHP Mess Detector
     # It takes a given PHP source code base and look for several potential problems within that source.
@@ -126,10 +134,11 @@ tools:
                 short_variable: { minimum: 3 }
         filter:
             excluded_paths:
+                - 'css/*'
                 - 'docs/*'
+                - 'images/*'
                 - 'lib/*'
                 - 'tests/*'
-                - 'examples/*'
 
     # Runs Scrutinizer's PHP Analyzer Tool
     # https://scrutinizer-ci.com/docs/tools/php/php-analyzer/config_reference
@@ -148,10 +157,11 @@ tools:
                     isser_method_name: ^(?:[_a-zA-Z]|__)[a-zA-Z0-9]*$ #Allow underscores & caps
         filter:
             excluded_paths:
+                - 'css/*'
                 - 'docs/*'
+                - 'images/*'
                 - 'tests/*'
                 - 'lib/*'
-                - 'examples/*'
 
     # Security Advisory Checker
     # https://security.sensiolabs.org
