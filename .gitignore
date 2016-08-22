@@ -9,9 +9,12 @@
 *.swp
 *.tmp
 *~
-*.svn
+.DS_Store
+.svn
+.vsphpignore
+/*.cache
+/*.puo
 /nbproject
-logs
+logs/*
+tmp/*
 nbproject
-*.log
-lib
